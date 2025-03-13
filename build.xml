@@ -16,15 +16,15 @@
 
     <target name="jar" depends="compile">
         <mkdir dir="build/jar"/>
-        <jar destfile="build/jar/wigglemouse-${version.num}.jar" basedir="build/classes">
+        <jar destfile="build/jar/automationalive-${version.num}.jar" basedir="build/classes">
         <manifest>
-            <attribute name="Main-Class" value="main.WiggleMouse"/>
+            <attribute name="Main-Class" value="main.automationalive"/>
         </manifest>
         </jar>
     </target>
 
     <target name="run" depends="jar">
-        <java jar="build/jar/wigglemouse-${version.num}.jar" fork="true"/>
+        <java jar="build/jar/automationalive-${version.num}.jar" fork="true"/>
     </target>
 
 </project>

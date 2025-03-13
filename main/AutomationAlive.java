@@ -4,7 +4,7 @@ import common.Monitor;
 import common.TextDialog;
 import common.WaitingThread;
 
-public class WiggleMouse {
+public class AutomationAlive {
 
 	public static void main(String[] args) {
 
@@ -12,7 +12,7 @@ public class WiggleMouse {
 
 		boolean gui = true;
 		int hours = 0;
-		int minutes = 5;
+		int minutes = 1;
 		int seconds = 0;
 
 		try {
@@ -51,7 +51,7 @@ public class WiggleMouse {
 		} catch (NullPointerException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
-			System.err.println("Usage: java -jar wigglemouse [-nogui] [-interval hh:mm:ss]");
+			System.err.println("Usage: java -jar AutomationAlive [-nogui] [-interval hh:mm:ss]");
 			System.exit(1);
 		} 
 

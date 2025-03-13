@@ -32,7 +32,7 @@ public class TextDialog extends JFrame {
 	
 	
 	public TextDialog(Monitor monitor, WaitingThread waitingThread) {
-		super("WiggleMouse");
+		super("AutomationAlive");
 		this.waitingThread = waitingThread;
 		
 		/* This will make the program look like any other program and not
@@ -45,7 +45,7 @@ public class TextDialog extends JFrame {
 		}
 		
 		/* Creating widgets */
-		this.label = new JLabel("Time to wait before mouse wiggle:");
+		this.label = new JLabel("Time to wait :");
 		String showTime = monitor.getHours()+"h:"+monitor.getMinutes()+"m:"+monitor.getSeconds()+"s";
 		this.showTimeLabel = new JLabel(showTime);
 		this.hoursTextField = new JTextField(monitor.getHours()+"", 2);
@@ -136,7 +136,7 @@ class SetTimeListener implements ActionListener {
 			hours = 0;
 		}
 		
-		/* Otherwise it will do some crazy wiggling */
+		/* Otherwise it will do some crazy moves */
 		if (hours == 0 && minutes == 0 && seconds == 0) {
 			seconds = 1;
 		}
